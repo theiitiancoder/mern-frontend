@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v3
     
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag mern-backend:latest
+      run: docker build . --file Dockerfile --tag mern-frontend:latest
       
     - name: Login to Docker Hub
       uses: docker/login-action@v3
@@ -29,7 +29,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: theiitiancoder/mern-backend:latest
+        tags: theiitiancoder/mern-frontend:latest
 
   
     
