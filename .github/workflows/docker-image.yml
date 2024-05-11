@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: theiitiancoder/mern-frontend:latest
+        tags: theiitiancoder/mern-frontend:arm
 
   
     
